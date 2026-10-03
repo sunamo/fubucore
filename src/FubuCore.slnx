@@ -1,0 +1,30 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="Retail" />
+    <Platform Name="Any CPU" />
+    <Platform Name="Mixed Platforms" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/__Build_Utilities/">
+    <File Path="../InstallGems.bat" />
+    <File Path="../rakefile.rb" />
+  </Folder>
+  <Project Path="FubuCore.Docs/FubuCore.Docs.csproj">
+    <BuildType Solution="Retail|*" Project="Release" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+  <Project Path="FubuCore.Testing/FubuCore.Testing.csproj">
+    <BuildType Solution="Retail|*" Project="Release" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+  <Project Path="FubuCore/FubuCore.csproj">
+    <BuildType Solution="Retail|*" Project="Release" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+  <Project Path="FubuTestingSupport/FubuTestingSupport.csproj">
+    <BuildType Solution="Retail|*" Project="Release" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+</Solution>
