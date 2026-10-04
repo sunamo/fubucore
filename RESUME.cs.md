@@ -1,6 +1,6 @@
 ---
 schema_version: 6
-type: forked_notmine_library
+type: forked-notmine-library
 file_count: 548
 avg_lines_per_file: 78
 move_to_legacy_percent: 75
